@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    font-family: 'Epilogue', sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 120px;
+}
+
+.body{
+    padding-top: 83px;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    margin-top: -83px;
+    background-color: rgb(163, 163, 163);
+    box-shadow: 0 0 6px #000;
+    z-index: 1;
+}
+
+.navbarTitle{
+    font-size: 32px;
+    padding: 25px;
+    color: rgb(19, 236, 113);
+    text-shadow: 1px 1px 2px #000;
+}
+
+.navbarLinkContainer{
+    display: flex;
+    align-items: center;
+}
+
+.navbarLink{
+    font-size: 18px;
+    margin: 0 30px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbarLink:hover{
+    color: rgb(19, 236, 113);
+}
+
+/* HEADER */
+
+.header{
+    background-image: url("./Images/header.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.headerContainer{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(0,255,68,0.4) 0%, rgba(0,185,255,0.4) 100%);
+}
+
+.headerTitle{
+    padding-top: 150px;
+    font-size: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.headerSubtitle{
+    text-align: center;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: 300;
+    color: #e7e7e7;
+    text-shadow: 1px 1px 2px #000;
+}
+
+/* ABOUT */
+
+.about{
+    padding: 0 80px;
+    display: flex;
+}
+
+.aboutTitle{
+    font-size: 45px;
+    padding-bottom: 30px;
+    color: rgb(0, 225, 255);
+}
+
+.aboutText{
+    font-size: 30px;
+    padding-right: 100px;
+}
+
+.aboutImage{
+    height: 400px;
+}
+
+/*  WORKS */
+
+.works{
+    margin-top: 80px;
+}
+
+.worksTitle{
+    padding-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(19, 236, 113);
+    text-shadow: 1px 1px 2px rgb(85, 85, 85);
+}
+
+.worksCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 80px;
+}
+
+.worksCard{
+    height: 400px;
+    box-shadow: 2px 2px 5px #000;
+    text-decoration: none;
+    filter: blur(2px) grayscale(100);
+    position: relative;
+}
+
+.worksCard:hover{
+    filter: none;
+    transition: .35s;
+}
+
+.worksCardImageContainer{
+    height: 70%;
+}
+
+.worksCardImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+
+.worksCardTextContainer{
+    height: 30%;
+    background-color: rgb(19, 236, 113);
+}
+
+.worksCardText{
+    padding: 20px 0 0 20px;
+    color: #000;
+}
+
+/* SKILLS */
+
+.skills{
+    padding: 0 80px 80px 80px;
+}
+
+.skillsTitle{
+    font-size: 30px;
+    padding: 80px 0;
+    text-align: center;
+    color: rgb(0, 225, 255);
+}
+
+.skillsTechnical{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+}
+
+.skillsTechnicalCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsTechnicalCard img{
+    height: 100px;
+}
+
+.skillsTechnicalCard p{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.skillsSoft{
+    display: flex;
+}
+
+.skillsSoftImageContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.skillsSoftImage{
+    width: 50%;
+}
+
+.skillsSoftListContainer{
+    width: 50%;
+}
+
+.skillsSoftList{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.skillsSoftListItem{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* CONTACT */
+
+.contact{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 225, 255);
+    box-shadow: 0 0 10px #000;
+}
+
+.contactCard{
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+
+.contactCardImage{
+   height: 70px;
+   margin-bottom: 10px;
+}
+
+.contactCardTitle{
+    font-size: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media(max-width: 1050px){
+    .about{
+        flex-direction: column;
+    }
+    .aboutText{
+        padding-right: 0;
+    }
+    .aboutImage{
+        height: auto;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .worksCards{
+        grid-template-columns: 1fr 1fr;
+        padding: 50px;
+    }
+    .skillsTechnical{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .skillsSoft{
+        flex-direction: column-reverse;
+    }
+    .skillsSoftImageContainer{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .skillsSoftListContainer{
+        width: 100%;
+    }
+    .skillsSoftListItem{
+        padding: 10px 0;
+    }
+}
+
+@media(max-width: 930px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbarTitle{
+        padding: 20px 0 0 0;
+    }
+    .navbarLink{
+        margin: 20px;
+        font-size: 15px;
+    }
+    .skillsTechnicalCard img{
+        height: 70px;
+    }
+    .skillsTechnicalCard p{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 700px){
+    .about{
+        padding: 0 40px;
+    }
+    .worksCards{
+        grid-template-columns: 1fr;
+    }
+    .skills{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: 600px){
+    .headerContainer{
+        height: 500px;
+    }
+    .headerTitle{
+        font-size: 40px;
+    }
+    .headerSubtitle{
+        font-size: 20px;
+    }
+    .aboutTitle{
+        font-size: 30px;
+    }
+    .aboutText{
+        font-size: 20px;
+    }
+    .worksTitle{
+        font-size: 20px;
+    }
+    .contactCard{
+        margin: 0 15px;
+    }
+    .contactCardImage{
+        height: 40px;
+    }
+    .contactCardTitle{
+        font-size: 15px;
+    }
+    .skillsTechnical{
+        grid-template-columns: 1fr 1fr;
+    }
+    .skillsSoftListItem{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 500px){
+    .navbarTitle{
+        font-size: 25px;
+    }
+    .navbarLink{
+        margin: 20px 10px;
+        font-size: 14px;
+    }
+    .headerTitle{
+        font-size: 30px;
+    }
+    .headerSubtitle{
+        font-size: 15px;
+    }
+    .skillsSoftListItem{
+        font-size: 20px;
+    }
+}

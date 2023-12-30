@@ -1,0 +1,122 @@
+.container {
+    min-height: calc(100vh - 100px);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: var(--darkGray);
+}
+
+.title {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title hr {
+    height: 3px;
+    width: 30px;
+    background-color: var(--green);
+    border: none;
+}
+
+.title h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    max-width: 800px;
+    text-align: center;
+    color: white;
+}
+
+.gallery {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+}
+
+.galleryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.one {
+    grid-row: 1 / 3;
+}
+.two {
+    grid-row: 1 / 2;
+}
+.three {
+    grid-row: 1 / 3;
+}
+.four {
+    grid-row: 3 / 4;
+}
+.five {
+    grid-row: 2 / 4;
+}
+.six {
+    grid-row: 3 / 4;
+}
+
+.galleryCardImage {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    box-shadow: -3px 3px 5px black;
+}
+
+.galleryCardImage:hover {
+    cursor: pointer;
+    filter: none;
+    transition: 0.3s;
+}
+
+.imageOne {
+    background-image: url("../../assets/images/gameboy.png");
+}
+.imageTwo {
+    background-image: url("../../assets/images/neofood.png");
+}
+.imageThree {
+    background-image: url("../../assets/images/mastermind.png");
+}
+.imageFour {
+    background-image: url("../../assets/images/sportsync.png");
+}
+.imageFive {
+    background-image: url("../../assets/images/calculator.png");
+}
+.imageSix {
+    background-image: url("../../assets/images/ink-world.png");
+}
+
+.galleryCardData {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.galleryCardDataTitle {
+    font-weight: 600;
+    color: var(--green);
+}
+
+.galleryCardDataTechnologies {
+    font-weight: 200;
+    color: white;
+}
+
+.galleryCardDataTechnologies span {
+    font-weight: 600;
+}

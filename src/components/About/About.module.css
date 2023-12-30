@@ -27,16 +27,16 @@
     box-shadow: -3px 3px 5px black;
 }
 
-.dataInfoTitle {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
 .dataInfo {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.dataInfoTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .dataInfoTitle hr {

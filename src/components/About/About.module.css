@@ -73,6 +73,28 @@
 }
 
 .dataInfoButtonsButton:hover {
+    cursor: pointer;
     color: black;
     background-color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .container {
+        min-height: calc(100vh - 90px);
+        padding: 50px 20px;
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+    }
+    .dataImage {
+        border: 2px solid var(--green);
+    }
+    .dataImage img {
+        transform: none;
+        box-shadow: none;
+    }
+    .dataInfoButtons {
+        gap: 10px;
+    }
 }

@@ -1,5 +1,5 @@
 .container {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     padding-top: 50px;
     display: flex;
     background-color: rgb(32, 32, 32);
@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
+    text-shadow: -3px 3px 5px #000;
 }
 
 .infoHello {
@@ -26,23 +27,29 @@
 }
 
 .infoOccupation {
+    font-size: 25px;
+    font-weight: 200;
+    font-style: italic;
     color: white;
 }
 
 .infoOccupation span {
     color: var(--green);
-    font-weight: 900;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .infoDownload {
-    color: var(--green);
     padding: 10px;
+    font-weight: 600;
+    color: var(--green);
     background: linear-gradient(to right, var(--green) 50%, black 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: background-position 0.3s ease;
-    border: 1px solid var(--green);
+    border: 2px solid var(--green);
     border-radius: 50px;
+    box-shadow: -3px 3px 5px #000;
 }
 
 .infoDownload:hover {

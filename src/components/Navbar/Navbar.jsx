@@ -17,19 +17,19 @@ export default function Navbar() {
             </div>
             <ul className={`${style.links} ${showLinks ? style.linksOpen : ""}`}>
                 <li className={style.linksLink}>
-                    <a href="#">Inicio</a>
+                    <a href="#header">Inicio</a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#">Sobre mi</a>
+                    <a href="#about">Sobre mi</a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#">Proyectos</a>
+                    <a href="#projects">Proyectos</a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#">Tecnologías</a>
+                    <a href="technologies">Tecnologías</a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#">Contacto</a>
+                    <a href="#contact">Contacto</a>
                 </li>
             </ul>
         </nav>

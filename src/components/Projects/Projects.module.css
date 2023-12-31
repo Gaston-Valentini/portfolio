@@ -30,8 +30,15 @@
 
 .text {
     max-width: 800px;
+    font-weight: 200;
     text-align: center;
     color: white;
+}
+
+.textLink {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--green);
 }
 
 .gallery {
@@ -119,4 +126,39 @@
 
 .galleryCardDataTechnologies span {
     font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 50px 20px;
+        gap: 20px;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+    }
+    .one {
+        grid-row: 1 / 2;
+    }
+    .two {
+        grid-row: 2 / 3;
+    }
+    .three {
+        grid-row: 3 / 4;
+    }
+    .four {
+        grid-row: 4 / 5;
+    }
+    .five {
+        grid-row: 5 / 6;
+    }
+    .six {
+        grid-row: 6 / 7;
+    }
 }

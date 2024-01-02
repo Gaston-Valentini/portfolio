@@ -3,10 +3,10 @@ import style from "./Projects.module.css";
 export default function Projects() {
     return (
         <section className={style.container}>
-            <h2 className={style.title}>
+            <div className={style.title}>
                 <hr />
                 <h2>PROYECTOS</h2>
-            </h2>
+            </div>
             <p className={style.text}>
                 A continuación se encuentran los enlaces a algunos de mis proyectos personales, los cuales han sido desarrollados
                 a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Front-end como proyectos Full-stack.

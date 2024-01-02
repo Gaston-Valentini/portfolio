@@ -1,7 +1,25 @@
 import style from "./Technologies.module.css";
 import { MdOutlineScreenRotation } from "react-icons/md";
-import { FaReact, FaDatabase, FaServer } from "react-icons/fa";
+import {
+    FaHtml5,
+    FaCss3,
+    FaBootstrap,
+    FaLess,
+    FaReact,
+    FaNode,
+    FaPhp,
+    FaLaravel,
+    FaGitAlt,
+    FaGithub,
+    FaDocker,
+    FaAws,
+    FaDatabase,
+    FaServer,
+} from "react-icons/fa";
+import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from "react-icons/si";
+import { DiJqueryLogo, DiMysql } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
+import { PiFileSqlDuotone } from "react-icons/pi";
 import { GoShieldCheck } from "react-icons/go";
 
 export default function Technologies() {
@@ -16,39 +34,84 @@ export default function Technologies() {
                     <div className={style.contentTechnologiesSection}>
                         <p className={style.contentTechnologiesSectionTitle}>FRONTEND</p>
                         <ul className={style.contentTechnologiesSectionList}>
-                            <li className={style.contentTechnologiesSectionListElement}>HTML</li>
-                            <li className={style.contentTechnologiesSectionListElement}>CSS</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Bootstrap</li>
-                            <li className={style.contentTechnologiesSectionListElement}>LESS</li>
-                            <li className={style.contentTechnologiesSectionListElement}>JavaScript</li>
-                            <li className={style.contentTechnologiesSectionListElement}>TypeScript</li>
-                            <li className={style.contentTechnologiesSectionListElement}>jQuery</li>
-                            <li className={style.contentTechnologiesSectionListElement}>React</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Redux</li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaHtml5 className={style.contentTechnologiesSectionListElementIcon} /> <span>HTML</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaCss3 className={style.contentTechnologiesSectionListElementIcon} /> <span>CSS</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaBootstrap className={style.contentTechnologiesSectionListElementIcon} /> <span>Bootstrap</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaLess className={style.contentTechnologiesSectionListElementIcon} /> <span>LESS</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <IoLogoJavascript className={style.contentTechnologiesSectionListElementIcon} />{" "}
+                                <span>JavaScript</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiTypescript className={style.contentTechnologiesSectionListElementIcon} />{" "}
+                                <span>TypeScript</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <DiJqueryLogo className={style.contentTechnologiesSectionListElementIcon} /> <span>jQuery</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaReact className={style.contentTechnologiesSectionListElementIcon} /> <span>React</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiRedux className={style.contentTechnologiesSectionListElementIcon} /> <span>Redux</span>
+                            </li>
                         </ul>
                     </div>
                     <hr />
                     <div className={style.contentTechnologiesSection}>
                         <p className={style.contentTechnologiesSectionTitle}>BACKEND</p>
                         <ul className={style.contentTechnologiesSectionList}>
-                            <li className={style.contentTechnologiesSectionListElement}>Node.js</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Express</li>
-                            <li className={style.contentTechnologiesSectionListElement}>MongoDB</li>
-                            <li className={style.contentTechnologiesSectionListElement}>MySQL</li>
-                            <li className={style.contentTechnologiesSectionListElement}>SQL</li>
-                            <li className={style.contentTechnologiesSectionListElement}>PHP</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Laravel</li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaNode className={style.contentTechnologiesSectionListElementIcon} /> <span>Node.js</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiExpress className={style.contentTechnologiesSectionListElementIcon} /> <span>Express</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiMongodb className={style.contentTechnologiesSectionListElementIcon} /> <span>MongoDB</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <DiMysql className={style.contentTechnologiesSectionListElementIcon} /> <span>MySQL</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <PiFileSqlDuotone className={style.contentTechnologiesSectionListElementIcon} /> <span>SQL</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaPhp className={style.contentTechnologiesSectionListElementIcon} /> <span>PHP</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaLaravel className={style.contentTechnologiesSectionListElementIcon} /> <span>Laravel</span>
+                            </li>
                         </ul>
                     </div>
                     <hr />
                     <div className={style.contentTechnologiesSection}>
                         <p className={style.contentTechnologiesSectionTitle}>HERRAMIENTAS</p>
                         <ul className={style.contentTechnologiesSectionList}>
-                            <li className={style.contentTechnologiesSectionListElement}>Git</li>
-                            <li className={style.contentTechnologiesSectionListElement}>GitHub</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Postman</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Docker</li>
-                            <li className={style.contentTechnologiesSectionListElement}>Deploy</li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaGitAlt className={style.contentTechnologiesSectionListElementIcon} /> <span>Git</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaGithub className={style.contentTechnologiesSectionListElementIcon} /> <span>GitHub</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiPostman className={style.contentTechnologiesSectionListElementIcon} /> <span>Postman</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaDocker className={style.contentTechnologiesSectionListElementIcon} /> <span>Docker</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaAws className={style.contentTechnologiesSectionListElementIcon} />
+                                <span>Deploy</span>
+                            </li>
                         </ul>
                     </div>
                 </div>

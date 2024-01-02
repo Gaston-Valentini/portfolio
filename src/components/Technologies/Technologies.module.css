@@ -53,11 +53,20 @@
 
 .contentTechnologiesSectionList {
     padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
     list-style: none;
 }
 
 .contentTechnologiesSectionListElement {
-    font-weight: 200;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.contentTechnologiesSectionListElement span {
     color: white;
 }
 
@@ -107,4 +116,41 @@
 .contentSkillsCardsCardText span {
     font-weight: 800;
     color: var(--green);
+}
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contentSkillsCards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 400px) {
+    .contentTechnologies {
+        gap: 10px;
+    }
+    .contentTechnologiesSectionList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contentTechnologiesSectionListElementIcon {
+        font-size: 20px;
+    }
+    .contentTechnologiesSectionListElement span {
+        display: none;
+    }
+    .contentSkillsCards {
+        grid-template-columns: 1fr;
+    }
 }

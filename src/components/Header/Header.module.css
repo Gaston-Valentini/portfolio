@@ -1,29 +1,40 @@
 .container {
     min-height: calc(100vh - 50px);
     padding-top: 50px;
-    display: flex;
-    background-color: rgb(32, 32, 32);
+    background-image: url("../../assets/images/header.jpg");
+    background-position: 0 -300px;
     background-size: cover;
+    transform: scaleX(-1);
+}
+
+.background {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #0000005e;
 }
 
 .info {
-    padding: 0 200px 20px;
+    padding: 0 150px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 20px;
-    text-shadow: -3px 3px 5px #000;
+    transform: scaleX(-1);
 }
 
 .infoHello {
     color: white;
+    text-shadow: 0 0 3px #000;
 }
 
 .infoName {
     font-size: 50px;
     font-weight: 800;
     color: var(--green);
+    text-shadow: 0 0 3px #000;
 }
 
 .infoOccupation {
@@ -31,6 +42,7 @@
     font-weight: 200;
     font-style: italic;
     color: white;
+    text-shadow: 0 0 3px #000;
 }
 
 .infoOccupation span {
@@ -49,7 +61,7 @@
     transition: background-position 0.3s ease;
     border: 2px solid var(--green);
     border-radius: 50px;
-    box-shadow: -3px 3px 5px #000;
+    box-shadow: -2px 2px 3px #000;
 }
 
 .infoDownload:hover {
@@ -58,7 +70,13 @@
     color: black;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 1150px) {
+    .container {
+        background-position: top;
+    }
+}
+
+@media (max-width: 768px) {
     .info {
         padding-left: 20px;
     }

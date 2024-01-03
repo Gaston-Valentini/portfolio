@@ -138,9 +138,10 @@
 
 .dataElementButtonsIcon {
     padding: 10px;
+    font-size: 30px;
+    color: black;
     border: 2px solid black;
     border-radius: 50px;
-    font-size: 30px;
 }
 
 .dataElementButtonsIcon:hover {

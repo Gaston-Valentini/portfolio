@@ -1,16 +1,13 @@
 import style from "./About.module.css";
+import photo from "../../assets/images/about.jpg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
 
 export default function About() {
     return (
         <section className={style.container} id="about">
             <div className={style.data}>
                 <div className={style.dataImage}>
-                    <img
-                        src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        alt="profilePhoto"
-                    />
+                    <img src={photo} alt="profilePhoto" />
                 </div>
                 <div className={style.dataInfo}>
                     <div className={style.dataInfoTitle}>
@@ -25,7 +22,11 @@ export default function About() {
                         <br />
                         Comencé mis estudios de manera autodidacta en 2020 a través de internet, y durante más de 3 años aprendí
                         mucho de lo que hoy en día se hacer, hasta que decidí dar un impulso aún mayor a mi carrera, por lo que
-                        decidí comenzar un bootcamp de Desarrollo Web Full Stack en <a href="#">GeeksHubs Academy</a>.
+                        decidí comenzar un bootcamp de Desarrollo Web Full Stack en{" "}
+                        <a href="https://geekshubsacademy.com/producto/full-stack-developer/" target="_blank">
+                            GeeksHubs Academy
+                        </a>
+                        .
                         <br />
                         <br />
                         Disfruto mucho de otras actividades como hacer deporte, relacionarme con personas, leer y actividades de

@@ -126,6 +126,10 @@
     font-size: 20px;
 }
 
+.dataElementText {
+    word-wrap: break-word;
+}
+
 .dataElementButtons {
     display: flex;
     justify-content: center;
@@ -142,4 +146,16 @@
 .dataElementButtonsIcon:hover {
     cursor: pointer;
     background-color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .containerCard {
+        flex-direction: column;
+    }
 }

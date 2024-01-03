@@ -1,0 +1,145 @@
+.container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--darkGrey);
+}
+
+.containerCard {
+    max-width: 800px;
+    display: flex;
+}
+
+.form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+
+.formTitle {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formTitle hr {
+    height: 3px;
+    width: 30px;
+    background-color: var(--green);
+    border: none;
+}
+
+.formTitle h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.formText {
+    font-weight: 200;
+    color: white;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formInputsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInputsSectionTitle {
+    font-weight: 800;
+    color: white;
+}
+
+.formInputsSectionInput {
+    padding: 5px 0;
+    border: none;
+    font-weight: 200;
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+.formInputs textarea {
+    height: 70px;
+    resize: none;
+    padding: 5px 0;
+    font-weight: 200;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+.formInputsSectionInput:focus {
+    outline: none;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    background: linear-gradient(to bottom, transparent, #393939);
+}
+
+.formInputs textarea:focus {
+    outline: none;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    background: linear-gradient(to bottom, transparent, #393939);
+}
+
+.formInputsSubmit {
+    padding: 10px;
+    font-weight: 800;
+    color: white;
+    border: 2px solid var(--green);
+    background-color: black;
+}
+
+.formInputsSubmit:hover {
+    cursor: pointer;
+    color: black;
+    background-color: var(--green);
+}
+
+.data {
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+
+.dataElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dataElementIcon {
+    font-size: 20px;
+}
+
+.dataElementButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dataElementButtonsIcon {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+.dataElementButtonsIcon:hover {
+    cursor: pointer;
+    background-color: var(--green);
+}

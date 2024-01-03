@@ -17,19 +17,29 @@ export default function Navbar() {
             </div>
             <ul className={`${style.links} ${showLinks ? style.linksOpen : ""}`}>
                 <li className={style.linksLink}>
-                    <a href="#header">Inicio</a>
+                    <a href="#header" onClick={onBars}>
+                        Inicio
+                    </a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#about">Sobre mi</a>
+                    <a href="#about" onClick={onBars}>
+                        Sobre mi
+                    </a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#projects">Proyectos</a>
+                    <a href="#projects" onClick={onBars}>
+                        Proyectos
+                    </a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="technologies">Tecnologías</a>
+                    <a href="#technologies" onClick={onBars}>
+                        Tecnologías
+                    </a>
                 </li>
                 <li className={style.linksLink}>
-                    <a href="#contact">Contacto</a>
+                    <a href="#contact" onClick={onBars}>
+                        Contacto
+                    </a>
                 </li>
             </ul>
         </nav>

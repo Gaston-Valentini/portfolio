@@ -24,7 +24,7 @@ import { GoShieldCheck } from "react-icons/go";
 
 export default function Technologies() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="technologies">
             <div className={style.title}>
                 <hr />
                 <h2>TECNOLOGIAS</h2>

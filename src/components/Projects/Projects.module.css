@@ -29,7 +29,7 @@
 }
 
 .text {
-    max-width: 800px;
+    max-width: 900px;
     font-weight: 200;
     text-align: center;
     color: white;
@@ -45,7 +45,7 @@
 }
 
 .gallery {
-    max-width: 800px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 200px 200px 200px;

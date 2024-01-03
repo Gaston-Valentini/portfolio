@@ -8,7 +8,7 @@
 }
 
 .data {
-    max-width: 800px;
+    max-width: 900px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 40px;
@@ -56,6 +56,15 @@
     font-weight: 200;
     font-style: italic;
     color: white;
+}
+
+.dataInfoBio a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--green);
+}
+.dataInfoBio a:hover {
+    text-decoration: 2px underline;
 }
 
 .dataInfoButtons {

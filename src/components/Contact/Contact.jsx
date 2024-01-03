@@ -23,7 +23,7 @@ export default function Contact() {
     };
 
     return (
-        <div className={style.container}>
+        <section className={style.container} id="contact">
             <div className={style.containerCard}>
                 <div className={style.form}>
                     <div className={style.formTitle}>
@@ -68,6 +68,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

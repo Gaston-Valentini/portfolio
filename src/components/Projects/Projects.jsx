@@ -2,7 +2,7 @@ import style from "./Projects.module.css";
 
 export default function Projects() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="projects">
             <div className={style.title}>
                 <hr />
                 <h2>PROYECTOS</h2>

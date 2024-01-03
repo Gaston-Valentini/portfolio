@@ -4,7 +4,7 @@ import { IoIosMail } from "react-icons/io";
 
 export default function About() {
     return (
-        <section className={style.container}>
+        <section className={style.container} id="about">
             <div className={style.data}>
                 <div className={style.dataImage}>
                     <img
@@ -18,13 +18,22 @@ export default function About() {
                         <h2>SOBRE MI</h2>
                     </div>
                     <p className={style.dataInfoBio}>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi numquam tempora cum deleniti. Fugit
-                        illo mollitia illum laudantium quo quae debitis ipsa optio enim delectus. Esse eligendi vel culpa! Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit. Officia asperiores non ducimus adipisci iusto, ut dicta
-                        sapiente repellat quod mollitia libero animi, eveniet architecto sunt expedita, distinctio nam illo quos.
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ipsa molestiae accusamus eum obcaecati
-                        minima minus aliquid architecto. Earum vero vitae, explicabo ipsa tenetur aperiam. Voluptas magnam quasi
-                        ducimus expedita?
+                        Mi nombre es Gastón Valentini, y soy un apasionado no solo de la tecnología, sino del desarrollo y
+                        construcción de soluciones informáticas con el fin de mejorar la calidad de vida de las personas y crear
+                        negocios digitales de alto impacto.
+                        <br />
+                        <br />
+                        Comencé mis estudios de manera autodidacta en 2020 a través de internet, y durante más de 3 años aprendí
+                        mucho de lo que hoy en día se hacer, hasta que decidí dar un impulso aún mayor a mi carrera, por lo que
+                        decidí comenzar un bootcamp de Desarrollo Web Full Stack en <a href="#">GeeksHubs Academy</a>.
+                        <br />
+                        <br />
+                        Disfruto mucho de otras actividades como hacer deporte, relacionarme con personas, leer y actividades de
+                        emprendimiento.
+                        <br />
+                        <br />
+                        ¡Gracias por visitar mi página, y espero que disfrutes de mi contenido! No dudes en ponerte en contacto
+                        conmigo si lo deseas :)
                     </p>
                     <div className={style.dataInfoButtons}>
                         <a href="https://github.com/Gaston-Valentini" target="_blank" rel="noopener noreferrer">
@@ -32,9 +41,6 @@ export default function About() {
                         </a>
                         <a href="https://www.linkedin.com/in/gastonvalentini/" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin className={style.dataInfoButtonsButton} />
-                        </a>
-                        <a href="#">
-                            <IoIosMail className={style.dataInfoButtonsButton} />
                         </a>
                     </div>
                 </div>

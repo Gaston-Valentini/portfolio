@@ -103,7 +103,7 @@
     }
     .dataImage img {
         max-height: 400px;
-        object-position: 0 -100px;
+        object-position: 0 -150px;
         transform: none;
         box-shadow: none;
     }
@@ -114,6 +114,12 @@
 
 @media (max-width: 550px) {
     .dataImage img {
-        object-position: top;
+        object-position: 0 -100px;
+    }
+}
+
+@media (max-width: 440px) {
+    .dataImage img {
+        object-position: bottom;
     }
 }

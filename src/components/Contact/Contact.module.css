@@ -107,6 +107,12 @@
     background-color: var(--green);
 }
 
+.formInputsMessage {
+    color: var(--green);
+    text-align: center;
+    text-shadow: 0 0 15px var(--green);
+}
+
 .data {
     height: max-content;
     padding: 20px;

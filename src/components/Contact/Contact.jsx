@@ -1,5 +1,5 @@
 import style from "./Contact.module.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
     const form = useRef();
-    const successMessage = useRef();
+    const [successMessage, setSuccessMessage] = useState("");
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -20,6 +20,11 @@ export default function Contact() {
                 console.log(error.text);
             }
         );
+
+        setSuccessMessage("Correo enviado");
+        setTimeout(() => {
+            setSuccessMessage("");
+        }, 5000);
     };
 
     return (
@@ -47,7 +52,7 @@ export default function Contact() {
                             <textarea className={style.formInputsSectionInput} name="message" />
                         </div>
                         <input className={style.formInputsSubmit} type="submit" value="Enviar" />
-                        <label ref={successMessage}></label>
+                        <label className={style.formInputsMessage}>{successMessage}</label>
                     </form>
                 </div>
                 <div className={style.data}>

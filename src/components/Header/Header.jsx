@@ -1,4 +1,5 @@
 import style from "./Header.module.css";
+import cv from "../../assets/files/CV.pdf";
 
 export default function Header() {
     return (
@@ -10,7 +11,9 @@ export default function Header() {
                     <h1 className={style.infoOccupation}>
                         <span>___ </span>Full Stack Web Developer
                     </h1>
-                    <button className={style.infoDownload}>Descargar CV</button>
+                    <a className={style.infoDownload} href={cv} download="Gastón-Valentini-CV.pdf">
+                        Descargar CV
+                    </a>
                 </div>
             </div>
         </header>

@@ -16,17 +16,17 @@ export default function About() {
                     </div>
                     <p className={style.dataInfoBio}>
                         Mi nombre es Gastón Valentini, y soy un apasionado no solo de la tecnología, sino del desarrollo y
-                        construcción de soluciones informáticas con el fin de mejorar la calidad de vida de las personas y crear
+                        construcción de soluciones informáticas, con el fin de mejorar la calidad de vida de las personas y crear
                         negocios digitales de alto impacto.
                         <br />
                         <br />
                         Comencé mis estudios de manera autodidacta en 2020 a través de internet, y durante más de 3 años aprendí
-                        mucho de lo que hoy en día se hacer, hasta que decidí dar un impulso aún mayor a mi carrera, por lo que
-                        decidí comenzar un bootcamp de Desarrollo Web Full Stack en{" "}
+                        mucho de lo que hoy en día sé hacer, hasta que decidí dar un impulso aún mayor a mi carrera, por lo cual
+                        me inscribí en un bootcamp de Desarrollo Web Full Stack en{" "}
                         <a href="https://geekshubsacademy.com/producto/full-stack-developer/" target="_blank">
                             GeeksHubs Academy
-                        </a>
-                        .
+                        </a>{" "}
+                        , graduámdome del mismo en diciembre del 2023.
                         <br />
                         <br />
                         Disfruto mucho de otras actividades como hacer deporte, relacionarme con personas, leer y actividades de

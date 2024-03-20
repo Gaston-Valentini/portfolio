@@ -79,6 +79,9 @@
 
 @media (max-width: 768px) {
     .info {
-        padding-left: 20px;
+        padding: 0 20px;
+    }
+    .infoName {
+        font-size: 40px;
     }
 }

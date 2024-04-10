@@ -1,0 +1,83 @@
+.container {
+    position: fixed;
+    height: 50px;
+    width: calc(100% - 30px);
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    box-shadow: 0 0 7px #000;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.bars {
+    display: none;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+
+.linksLink {
+    list-style: none;
+}
+
+.linksLink a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--green);
+    position: relative;
+}
+
+.linksLink a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--green);
+    transition: 0.3s ease;
+}
+
+.linksLink a:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .bars {
+        display: flex;
+        align-items: center;
+    }
+    .barsIcon {
+        font-size: 25px;
+        color: var(--green);
+    }
+    .links {
+        position: absolute;
+        top: 50px;
+        left: 100vw;
+        height: calc(100vh - 70px);
+        width: 100vw;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--green);
+        transition: left 0.3s ease-in;
+    }
+    .linksOpen {
+        left: 0px;
+    }
+    .linksLink a {
+        color: #000;
+    }
+}

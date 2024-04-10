@@ -1,3 +1,9 @@
 * {
     margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --green: #35ffae;
+    --black: #101010;
 }

@@ -68,7 +68,7 @@
         left: 100vw;
         height: calc(100vh - 70px);
         width: 100vw;
-        padding-top: 20px;
+        padding: 20px 0 0;
         flex-direction: column;
         align-items: center;
         background-color: var(--green);
@@ -78,6 +78,6 @@
         left: 0px;
     }
     .linksLink a {
-        color: #000;
+        color: var(--black);
     }
 }

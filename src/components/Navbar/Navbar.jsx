@@ -38,11 +38,6 @@ export default function Navbar() {
                 </li>
                 <li className={style.linksLink}>
                     <a href="#" onClick={onBars}>
-                        Tecnologías
-                    </a>
-                </li>
-                <li className={style.linksLink}>
-                    <a href="#" onClick={onBars}>
                         Contacto
                     </a>
                 </li>

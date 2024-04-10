@@ -1,0 +1,109 @@
+.container {
+    padding: 120px 20px 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.data {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+}
+
+.dataImage {
+    height: 100%;
+    border: 5px solid var(--green);
+}
+
+.dataImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(20px, -20px);
+    box-shadow: -3px 3px 5px black;
+}
+
+.dataInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dataInfoTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dataInfoTitle hr {
+    height: 3px;
+    width: 30px;
+    background-color: var(--green);
+    border: none;
+}
+
+.dataInfoTitle h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.dataInfoBio {
+    font-weight: 300;
+    font-style: italic;
+    color: var(--lightGrey);
+}
+
+.dataInfoBio a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--green);
+}
+.dataInfoBio a:hover {
+    text-decoration: 2px underline;
+}
+
+.dataInfoButtons {
+    display: flex;
+    gap: 20px;
+}
+
+.dataInfoButtonsButton {
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: var(--black);
+    border: 2px solid var(--green);
+    border-radius: 50px;
+}
+
+.dataInfoButtonsButton:hover {
+    cursor: pointer;
+    color: black;
+    background-color: var(--green);
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 20px;
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dataImage {
+        height: 500px;
+        border: 2px solid var(--green);
+    }
+    .dataImage img {
+        transform: none;
+        box-shadow: none;
+    }
+    .dataInfoButtons {
+        gap: 10px;
+    }
+}

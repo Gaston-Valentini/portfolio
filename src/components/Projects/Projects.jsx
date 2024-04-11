@@ -21,18 +21,18 @@ export default function Projects() {
             </p>
             <div className={style.gallery}>
                 <div className={`${style.galleryCard} ${style.one}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageOne}`}></a>
+                    <a href="https://barbershop-client-production.up.railway.app/" target="_blank" className={`${style.galleryCardImage} ${style.imageOne}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Gameboy</p>
+                        <p className={style.galleryCardDataTitle}>Barbershop</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> HTML, CSS y JavaScript
+                            <span>Tecnologías:</span> React, Node, Express, Google API
                         </p>
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.two}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFour}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>SportSync (red social)</p>
+                        <p className={style.galleryCardDataTitle}>Proyecto 2</p>
                         <p className={style.galleryCardDataTechnologies}>
                             <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
@@ -41,36 +41,36 @@ export default function Projects() {
                 <div className={`${style.galleryCard} ${style.three}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageSix}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>INK-WORLD (gestor de citas)</p>
+                        <p className={style.galleryCardDataTitle}>Proyect0 3</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> React, Express, TypeORM, MySQL
+                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.four}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageTwo}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Neofood (landing page)</p>
+                        <p className={style.galleryCardDataTitle}>Proyecto 4</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> HTML, CSS y Bootstrap
+                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.five}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFive}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Calculadora</p>
+                        <p className={style.galleryCardDataTitle}>Proyecto 5</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> HTML, CSS y JavaScript
+                            <span>Tecnologías:</span>React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.six}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageThree}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Mastermind (videojuego)</p>
+                        <p className={style.galleryCardDataTitle}>Proyecto 6</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> HTML, CSS y JavaScript
+                            <span>Tecnologías:</span>React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>

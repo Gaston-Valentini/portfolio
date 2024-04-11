@@ -1,0 +1,193 @@
+.container {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleText {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.titleLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleLogoIcon {
+    font-size: 25px;
+    color: var(--green);
+}
+
+.titleLogo hr {
+    height: 2px;
+    width: 100px;
+    background-color: var(--green);
+    border: none;
+}
+
+.text {
+    max-width: 1000px;
+    font-weight: 300;
+    text-align: center;
+    color: var(--lightGrey);
+}
+
+.textLink {
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--green);
+}
+.textLink:hover {
+    text-decoration: 2px underline;
+}
+
+.gallery {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
+}
+
+.galleryCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.one {
+    grid-row: 1 / 3;
+}
+.two {
+    grid-row: 1 / 2;
+}
+.three {
+    grid-row: 1 / 3;
+}
+.four {
+    grid-row: 3 / 4;
+}
+.five {
+    grid-row: 2 / 4;
+}
+.six {
+    grid-row: 3 / 4;
+}
+
+.galleryCardImage {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(1);
+    box-shadow: -3px 3px 5px black;
+}
+
+.galleryCardImage:hover {
+    cursor: pointer;
+    filter: none;
+    transition: 0.3s;
+    outline: 1px solid var(--green);
+}
+
+.imageOne {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+.imageTwo {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+.imageThree {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+.imageFour {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+.imageFive {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+.imageSix {
+    background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
+}
+
+.galleryCardData {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.galleryCardDataTitle {
+    font-weight: 600;
+    color: var(--green);
+}
+
+.galleryCardDataTechnologies {
+    font-weight: 300;
+    color: var(--lightGrey);
+}
+
+.galleryCardDataTechnologies span {
+    font-weight: 600;
+    color: white;
+}
+
+.more {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid var(--green);
+    color: white;
+}
+
+.more:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: black;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding: 50px 20px;
+    }
+    .gallery {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 300px);
+    }
+    .one {
+        grid-row: 1 / 2;
+    }
+    .two {
+        grid-row: 2 / 3;
+    }
+    .three {
+        grid-row: 3 / 4;
+    }
+    .four {
+        grid-row: 4 / 5;
+    }
+    .five {
+        grid-row: 5 / 6;
+    }
+    .six {
+        grid-row: 6 / 7;
+    }
+}

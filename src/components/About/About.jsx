@@ -1,5 +1,6 @@
 import style from "./About.module.css";
 import photo from "../../assets/images/about.jpg";
+import { FaUser } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function About() {
@@ -11,8 +12,8 @@ export default function About() {
                 </div>
                 <div className={style.dataInfo}>
                     <div className={style.dataInfoTitle}>
-                        <hr />
-                        <p>SOBRE MI</p>
+                        <FaUser className={style.dataInfoTitleIcon} />
+                        <p className={style.dataInfoTitleText}>SOBRE MI</p>
                     </div>
                     <p className={style.dataInfoBio}>
                         Mi nombre es Gastón Valentini, y soy un apasionado no solo de la tecnología, sino del desarrollo y construcción de soluciones informáticas, con el fin de mejorar la calidad de vida de las personas y crear negocios digitales de alto impacto.

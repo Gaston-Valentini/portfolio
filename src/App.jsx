@@ -1,7 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Header from "../src/components/Header/Header";
-import About from "../src/components/About/About";
+import Header from "./components/Header/Header";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 export default function App() {
     return (
@@ -9,6 +10,7 @@ export default function App() {
             <Navbar />
             <Header />
             <About />
+            <Projects />
         </section>
     );
 }

@@ -1,0 +1,168 @@
+.container {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+}
+
+.containerCard {
+    max-width: 900px;
+    display: flex;
+}
+
+.form {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+
+.formTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formTitleIcon {
+    font-size: 25px;
+    color: var(--green);
+}
+
+.formTitleText {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.formText {
+    font-weight: 200;
+    color: white;
+}
+
+.formInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formInputsSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInputsSectionTitle {
+    font-weight: 800;
+    color: white;
+}
+
+.formInputsSectionInput {
+    padding: 5px 0;
+    border: none;
+    font-weight: 200;
+    color: white;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+.formInputs textarea {
+    height: 70px;
+    resize: none;
+    padding: 5px 0;
+    font-weight: 200;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: black;
+}
+
+.formInputsSectionInput:focus {
+    outline: none;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    background: linear-gradient(to bottom, transparent, #393939);
+}
+
+.formInputs textarea:focus {
+    outline: none;
+    color: var(--green);
+    border-bottom: 2px solid var(--green);
+    background: linear-gradient(to bottom, transparent, #393939);
+}
+
+.formInputsSubmit {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+    border: 2px solid var(--green);
+}
+
+.formInputsSubmit:hover {
+    cursor: pointer;
+    background-color: var(--green);
+    color: black;
+}
+
+.formInputsMessage {
+    color: var(--green);
+    text-align: center;
+    text-shadow: 0 0 15px var(--green);
+}
+
+.data {
+    height: max-content;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+}
+
+.dataElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dataElementIcon {
+    font-size: 20px;
+}
+
+.dataElementText {
+    word-wrap: break-word;
+}
+
+.dataElementButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dataElementButtonsIcon {
+    padding: 10px;
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.dataElementButtonsIcon:hover {
+    cursor: pointer;
+    background-color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .containerCard {
+        flex-direction: column;
+    }
+}

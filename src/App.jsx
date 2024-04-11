@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Technologies from "./components/Technologies/Technologies";
 
 export default function App() {
     return (
@@ -11,6 +12,7 @@ export default function App() {
             <Header />
             <About />
             <Projects />
+            <Technologies />
         </section>
     );
 }

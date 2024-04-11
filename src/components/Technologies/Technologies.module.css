@@ -1,0 +1,168 @@
+.container {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background-color: black;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleText {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.titleLogo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleLogoIcon {
+    font-size: 25px;
+    color: var(--green);
+}
+
+.titleLogo hr {
+    height: 2px;
+    width: 100px;
+    background-color: var(--green);
+    border: none;
+}
+
+.content {
+    align-self: center;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.contentTechnologies {
+    display: flex;
+    gap: 20px;
+}
+
+.contentTechnologiesSection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contentTechnologiesSectionTitle {
+    font-weight: 800;
+    color: var(--green);
+}
+
+.contentTechnologiesSectionList {
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.contentTechnologiesSectionListElement {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.contentTechnologiesSectionListElement span {
+    color: white;
+}
+
+.contentSkills {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contentSkillsTitle {
+    text-align: center;
+    color: white;
+}
+
+.contentSkillsCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.contentSkillsCardsCard {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--black);
+}
+.contentSkillsCardsCard:hover {
+    outline: 2px solid var(--green);
+}
+
+.contentSkillsCardsCardIcon {
+    font-size: 35px;
+    color: var(--green);
+}
+
+.contentSkillsCardsCardTitle {
+    font-weight: 800;
+    color: white;
+}
+
+.contentSkillsCardsCardText {
+    font-weight: 300;
+    color: var(--lightGrey);
+}
+
+.contentSkillsCardsCardText span {
+    font-weight: 800;
+    color: var(--green);
+}
+
+@media (max-width: 1100px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 50px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contentSkillsCards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 500px) {
+    .contentTechnologies {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contentTechnologiesSectionList {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contentTechnologiesSectionListElementIcon {
+        font-size: 20px;
+    }
+    .contentTechnologiesSectionListElement span {
+        display: none;
+    }
+    .contentSkillsCards {
+        grid-template-columns: 1fr;
+    }
+}

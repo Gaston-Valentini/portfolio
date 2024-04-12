@@ -1,5 +1,6 @@
 import style from "./Projects.module.css";
 import { FaRocket } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Projects() {
     return (
@@ -21,7 +22,7 @@ export default function Projects() {
             </p>
             <div className={style.gallery}>
                 <div className={`${style.galleryCard} ${style.one}`}>
-                    <a href="https://barbershop-client-production.up.railway.app/" target="_blank" className={`${style.galleryCardImage} ${style.imageOne}`}></a>
+                    <Link to="/project/1" className={`${style.galleryCardImage} ${style.imageOne}`}></Link>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Barbershop</p>
                         <p className={style.galleryCardDataTechnologies}>
@@ -61,7 +62,7 @@ export default function Projects() {
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 5</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span>React, Express, MongoDB, Node.js
+                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>
@@ -70,7 +71,7 @@ export default function Projects() {
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 6</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span>React, Express, MongoDB, Node.js
+                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>

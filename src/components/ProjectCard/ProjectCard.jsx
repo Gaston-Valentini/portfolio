@@ -1,12 +1,18 @@
 import style from "./ProjectCard.module.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useParams } from "react-router-dom";
 import { projectsData } from "../../data/projectsData";
 import { FaLaptop, FaServer } from "react-icons/fa";
+import NotFound from "../../views/NotFound/NotFound";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function ProjectCard() {
     const { id } = useParams();
     const project = projectsData.find((project) => project.id === parseInt(id));
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     if (project) {
         return (
@@ -50,6 +56,6 @@ export default function ProjectCard() {
             </section>
         );
     } else {
-        return <section>Not found</section>;
+        return <NotFound />;
     }
 }

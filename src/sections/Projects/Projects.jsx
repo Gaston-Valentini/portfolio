@@ -31,7 +31,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.two}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFour}`}></a>
+                    <Link to="/project/2" className={`${style.galleryCardImage} ${style.imageTwo}`}></Link>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 2</p>
                         <p className={style.galleryCardDataTechnologies}>
@@ -49,7 +49,7 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.four}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageTwo}`}></a>
+                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFour}`}></a>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 4</p>
                         <p className={style.galleryCardDataTechnologies}>

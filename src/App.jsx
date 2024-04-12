@@ -1,20 +1,15 @@
 import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Technologies from "./components/Technologies/Technologies";
-import Contact from "./components/Contact/Contact";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./views/Home/Home";
+import Project from "./views/Project/Project";
 
 export default function App() {
     return (
-        <section>
-            <Navbar />
-            <Header />
-            <About />
-            <Projects />
-            <Technologies />
-            <Contact />
-        </section>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/project/:id" element={<Project />} />
+            </Routes>
+        </Router>
     );
 }

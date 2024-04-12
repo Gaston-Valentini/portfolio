@@ -1,0 +1,159 @@
+.container {
+    min-height: calc(100vh - 250px);
+    padding: 150px 100px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.titleText {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+
+.titleDeploy {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: var(--green);
+}
+
+.titleDeploy:hover {
+    text-decoration: underline;
+}
+
+.description {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descriptionTitle {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.descriptionText {
+    line-height: 1.3;
+    color: var(--lightGrey);
+    text-align: justify;
+}
+
+.descriptionText a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--green);
+}
+
+.descriptionText a:hover {
+    text-decoration: underline;
+}
+
+.technologies {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technologiesTitle {
+    font-size: 25px;
+    font-weight: 800;
+    color: white;
+}
+
+.technologiesList {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.technologiesListElement {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.technologiesListElementTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.technologiesListElementTitle p {
+    font-weight: 600;
+    color: white;
+}
+
+.technologiesListElementTitle img {
+    height: 30px;
+}
+
+.technologiesListElementDescription {
+    line-height: 1.3;
+    color: var(--lightGrey);
+    text-align: justify;
+}
+
+.deploy {
+    align-self: flex-start;
+    display: flex;
+    gap: 20px;
+}
+
+.deployService {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    border: 2px solid var(--green);
+}
+
+.deployService:hover {
+    background-color: var(--green);
+    color: black;
+}
+
+.deployServiceIcon {
+    font-size: 25px;
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 100px 20px 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .titleText {
+        font-size: 40px;
+    }
+    .deploy {
+        flex-direction: column;
+    }
+}

@@ -15,7 +15,7 @@ export default function Projects() {
             </div>
             <p className={style.text}>
                 A continuación se encuentran los enlaces a algunos de mis proyectos personales, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Front-end como proyectos Full-stack. Acceda a mi{" "}
-                <a href="https://github.com/Gaston-Valentini" className={style.textLink}>
+                <a href="https://github.com/Gaston-Valentini" target="_blank" className={style.textLink}>
                     GitHub
                 </a>{" "}
                 personal si desea conocer la totalidad de mis trabajos.
@@ -76,7 +76,7 @@ export default function Projects() {
                     </div>
                 </div>
             </div>
-            <a href="https://github.com/Gaston-Valentini" className={style.more}>
+            <a href="https://github.com/Gaston-Valentini" target="_blank" className={style.more}>
                 Ver más
             </a>
         </section>

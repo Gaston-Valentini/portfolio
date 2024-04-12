@@ -64,10 +64,10 @@ export default function Contact() {
                         <FaLocationDot className={style.dataElementIcon} /> <p className={style.dataElementText}>Cornellana 1, Benidorm - Alicante, 03502</p>
                     </div>
                     <div className={style.dataElementButtons}>
-                        <a href="https://github.com/Gaston-Valentini">
+                        <a href="https://github.com/Gaston-Valentini" target="_blank">
                             <FaGithub className={style.dataElementButtonsIcon} />
                         </a>
-                        <a href="https://www.linkedin.com/in/gastonvalentini/">
+                        <a href="https://www.linkedin.com/in/gastonvalentini/" target="_blank">
                             <FaLinkedin className={style.dataElementButtonsIcon} />
                         </a>
                     </div>

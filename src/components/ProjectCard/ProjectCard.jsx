@@ -43,11 +43,11 @@ export default function ProjectCard() {
                         </ul>
                     </div>
                     <div className={style.deploy}>
-                        <a href={project.deploy.client} className={style.deployService}>
+                        <a href={project.repositories.client} target="_blank" className={style.deployService}>
                             <FaLaptop className={style.deployServiceIcon} />
                             <p className={style.deployServiceText}>Repositorio del cliente</p>
                         </a>
-                        <a href={project.deploy.server} className={style.deployService}>
+                        <a href={project.repositories.server} target="_blank" className={style.deployService}>
                             <FaServer className={style.deployServiceIcon} />
                             <p className={style.deployServiceText}>Repositorio del servidor</p>
                         </a>

@@ -47,7 +47,11 @@ export const projectsData = [
                 <br />
                 <span style={{ color: "white", fontWeight: "600" }}>🚀 Despliegue de servicios</span>
                 <br />
-                Utilicé el servicio gratuito que ofrece <a href="https://vercel.com/">Vercel</a> para desplegar tanto el servidor como la interfaz de usuario de mi proyecto.
+                Utilicé el servicio gratuito que ofrece{" "}
+                <a href="https://vercel.com/" target="_blank">
+                    Vercel
+                </a>{" "}
+                para desplegar tanto el servidor como la interfaz de usuario de mi proyecto.
             </p>
         ),
         technologies: [
@@ -70,7 +74,7 @@ export const projectsData = [
                 description: "En el corazón del servidor backend, Express ha sido fundamental para la configuración y gestión de rutas, la implementación de middleware y la creación de API REST full. Su enfoque minimalista y su potente conjunto de características me ha permitido desarrollar un backend robusto y altamente escalable.",
             },
         ],
-        deploy: {
+        repositories: {
             client: "https://github.com/Gaston-Valentini/barbershop-client",
             server: "https://github.com/Gaston-Valentini/barbershop-server",
         },

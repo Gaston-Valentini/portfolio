@@ -1,5 +1,5 @@
 .container {
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 50px);
     padding: 150px 100px 100px;
     background-color: black;
     display: flex;
@@ -69,7 +69,18 @@
     text-decoration: underline;
 }
 
+.image {
+    max-width: 1000px;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .technologies {
+    width: 100%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
@@ -86,7 +97,6 @@
     padding: 0;
     list-style: none;
     display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
@@ -152,6 +162,9 @@
 @media (max-width: 767px) {
     .titleText {
         font-size: 40px;
+    }
+    .technologiesList {
+        flex-direction: column;
     }
     .deploy {
         flex-direction: column;

@@ -28,6 +28,9 @@ export default function ProjectCard() {
                         <p className={style.descriptionTitle}>Descripción</p>
                         <p className={style.descriptionText}>{project.description}</p>
                     </div>
+                    <div className={style.image}>
+                        <img src={project.image} />
+                    </div>
                     <div className={style.technologies}>
                         <div className={style.technologiesTitle}>Tecnologías utilizadas</div>
                         <ul className={style.technologiesList}>

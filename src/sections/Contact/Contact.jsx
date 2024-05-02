@@ -12,16 +12,18 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm("service_7t9l59a", "template_h410d2a", form.current, "W4gsGBPdQ_9E1nLUo").then(
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
             (result) => {
                 console.log(result.text);
+                setSuccessMessage("Correo enviado");
+                form.current.reset();
             },
             (error) => {
                 console.log(error.text);
+                setSuccessMessage("Ha ocurrido un error, inténtalo nuevamente");
             }
         );
 
-        setSuccessMessage("Correo enviado");
         setTimeout(() => {
             setSuccessMessage("");
         }, 5000);

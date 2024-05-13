@@ -14,7 +14,7 @@ export default function Projects() {
                 </div>
             </div>
             <p className={style.text}>
-                A continuación se encuentran los enlaces a algunos de mis proyectos personales, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Front-end como proyectos Full-stack. Acceda a mi{" "}
+                A continuación se encuentran los enlaces a algunos de mis proyectos como freelancer, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Front-end como proyectos Full-stack. Acceda a mi{" "}
                 <a href="https://github.com/Gaston-Valentini" target="_blank" className={style.textLink}>
                     GitHub
                 </a>{" "}
@@ -33,9 +33,9 @@ export default function Projects() {
                 <div className={`${style.galleryCard} ${style.two}`}>
                     <Link to="/project/2" className={`${style.galleryCardImage} ${style.imageTwo}`}></Link>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Proyecto 2</p>
+                        <p className={style.galleryCardDataTitle}>Benilaser (Clínica de Estética)</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
+                            <span>Tecnologías:</span> React, Node, Express, Google API
                         </p>
                     </div>
                 </div>

@@ -107,6 +107,16 @@
     color: black;
 }
 
+.formInputsSubmit:disabled {
+    opacity: 0.5;
+}
+
+.formInputsSubmit:disabled:hover {
+    cursor: not-allowed;
+    color: white;
+    background-color: black;
+}
+
 .formInputsMessage {
     color: var(--green);
     text-align: center;

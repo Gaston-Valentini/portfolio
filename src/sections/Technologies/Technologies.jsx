@@ -1,12 +1,13 @@
 import style from "./Technologies.module.css";
 import { HiSquare3Stack3D } from "react-icons/hi2";
 import { MdOutlineScreenRotation } from "react-icons/md";
-import { FaHtml5, FaCss3, FaBootstrap, FaLess, FaReact, FaNode, FaPhp, FaLaravel, FaGitAlt, FaGithub, FaDocker, FaAws, FaDatabase, FaServer } from "react-icons/fa";
-import { SiTypescript, SiRedux, SiExpress, SiMongodb, SiPostman } from "react-icons/si";
+import { FaHtml5, FaCss3, FaBootstrap, FaLess, FaReact, FaNode, FaPhp, FaLaravel, FaGitAlt, FaGithub, FaDocker, FaDatabase, FaServer, FaTrello, FaFigma } from "react-icons/fa";
+import { SiTypescript, SiRedux, SiExpress, SiPrisma, SiMongodb, SiPostman, SiChakraui } from "react-icons/si";
 import { DiJqueryLogo, DiMysql } from "react-icons/di";
-import { IoLogoJavascript } from "react-icons/io";
+import { IoLogoJavascript, IoIosRocket } from "react-icons/io";
 import { PiFileSqlDuotone } from "react-icons/pi";
 import { GoShieldCheck } from "react-icons/go";
+import { RiNextjsFill } from "react-icons/ri";
 
 export default function Technologies() {
     return (
@@ -34,6 +35,9 @@ export default function Technologies() {
                                 <FaBootstrap className={style.contentTechnologiesSectionListElementIcon} /> <span>Bootstrap</span>
                             </li>
                             <li className={style.contentTechnologiesSectionListElement}>
+                                <SiChakraui className={style.contentTechnologiesSectionListElementIcon} /> <span>Chakra UI</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
                                 <FaLess className={style.contentTechnologiesSectionListElementIcon} /> <span>LESS</span>
                             </li>
                             <li className={style.contentTechnologiesSectionListElement}>
@@ -51,6 +55,9 @@ export default function Technologies() {
                             <li className={style.contentTechnologiesSectionListElement}>
                                 <SiRedux className={style.contentTechnologiesSectionListElementIcon} /> <span>Redux</span>
                             </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <RiNextjsFill className={style.contentTechnologiesSectionListElementIcon} /> <span>Next</span>
+                            </li>
                         </ul>
                     </div>
                     <hr />
@@ -62,6 +69,9 @@ export default function Technologies() {
                             </li>
                             <li className={style.contentTechnologiesSectionListElement}>
                                 <SiExpress className={style.contentTechnologiesSectionListElementIcon} /> <span>Express</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <SiPrisma className={style.contentTechnologiesSectionListElementIcon} /> <span>Prisma</span>
                             </li>
                             <li className={style.contentTechnologiesSectionListElement}>
                                 <SiMongodb className={style.contentTechnologiesSectionListElementIcon} /> <span>MongoDB</span>
@@ -97,8 +107,16 @@ export default function Technologies() {
                                 <FaDocker className={style.contentTechnologiesSectionListElementIcon} /> <span>Docker</span>
                             </li>
                             <li className={style.contentTechnologiesSectionListElement}>
-                                <FaAws className={style.contentTechnologiesSectionListElementIcon} />
+                                <IoIosRocket className={style.contentTechnologiesSectionListElementIcon} />
                                 <span>Deploy</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaTrello className={style.contentTechnologiesSectionListElementIcon} />
+                                <span>Trello</span>
+                            </li>
+                            <li className={style.contentTechnologiesSectionListElement}>
+                                <FaFigma className={style.contentTechnologiesSectionListElementIcon} />
+                                <span>Figma</span>
                             </li>
                         </ul>
                     </div>

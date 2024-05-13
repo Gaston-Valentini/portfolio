@@ -1,25 +1,39 @@
 import style from "./Contact.module.css";
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { FaWpforms, FaPhoneAlt, FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
-    const form = useRef();
+    const [form, setForm] = useState({
+        user_name: "",
+        user_email: "",
+        message: "",
+    });
+    const [isFormValid, setIsFormValid] = useState(false);
+    const formRef = useRef();
     const [successMessage, setSuccessMessage] = useState("");
+
+    const inputChange = (e) => {
+        const { name, value } = e.target;
+
+        setForm((prevState) => ({
+            ...prevState,
+            [name]: value,
+        }));
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
+        emailjs.sendForm(import.meta.env.VITE_EMAILJS_SERVICE_ID, import.meta.env.VITE_EMAILJS_TEMPLATE_ID, formRef.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY).then(
             (result) => {
                 console.log(result.text);
-                setSuccessMessage("Correo enviado");
-                form.current.reset();
+                setSuccessMessage("Correo enviado correctamente");
             },
             (error) => {
-                console.log(error.text);
+                console.log(error);
                 setSuccessMessage("Ha ocurrido un error, inténtalo nuevamente");
             }
         );
@@ -28,6 +42,11 @@ export default function Contact() {
             setSuccessMessage("");
         }, 5000);
     };
+
+    useEffect(() => {
+        const isValid = Object.values(form).every((value) => value.trim() !== "");
+        setIsFormValid(isValid);
+    }, [form]);
 
     return (
         <section className={style.container} id="contact">
@@ -38,20 +57,20 @@ export default function Contact() {
                         <p className={style.formTitleText}>CONTACTO</p>
                     </div>
                     <p className={style.formText}>Puede ponerse en contacto conmigo rellenando el siguiente formulario con sus datos</p>
-                    <form className={style.formInputs} ref={form} onSubmit={sendEmail}>
+                    <form className={style.formInputs} ref={formRef} onSubmit={sendEmail}>
                         <div className={style.formInputsSection}>
                             <label className={style.formInputsSectionTitle}>Nombre</label>
-                            <input className={style.formInputsSectionInput} type="text" name="user_name" />
+                            <input className={style.formInputsSectionInput} type="text" name="user_name" onChange={(e) => inputChange(e)} />
                         </div>
                         <div className={style.formInputsSection}>
                             <label className={style.formInputsSectionTitle}>Correo</label>
-                            <input className={style.formInputsSectionInput} type="email" name="user_email" />
+                            <input className={style.formInputsSectionInput} type="email" name="user_email" onChange={(e) => inputChange(e)} />
                         </div>
                         <div className={style.formInputsSection}>
                             <label className={style.formInputsSectionTitle}>Mensaje</label>
-                            <textarea className={style.formInputsSectionInput} name="message" />
+                            <textarea className={style.formInputsSectionInput} name="message" onChange={(e) => inputChange(e)} />
                         </div>
-                        <input className={style.formInputsSubmit} type="submit" value="Enviar" />
+                        <input className={style.formInputsSubmit} type="submit" value="Enviar" disabled={!isFormValid} />
                         <label className={style.formInputsMessage}>{successMessage}</label>
                     </form>
                 </div>

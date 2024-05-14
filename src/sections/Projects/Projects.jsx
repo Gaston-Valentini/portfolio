@@ -22,7 +22,7 @@ export default function Projects() {
             </p>
             <div className={style.gallery}>
                 <div className={`${style.galleryCard} ${style.one}`}>
-                    <Link to="/project/1" className={`${style.galleryCardImage} ${style.imageOne}`}></Link>
+                    <Link to="/project/3" className={`${style.galleryCardImage} ${style.imageOne}`}></Link>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Barbershop</p>
                         <p className={style.galleryCardDataTechnologies}>
@@ -42,18 +42,18 @@ export default function Projects() {
                 <div className={`${style.galleryCard} ${style.three}`}>
                     <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageSix}`}></a>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Proyect0 3</p>
+                        <p className={style.galleryCardDataTitle}>Proyect 3</p>
                         <p className={style.galleryCardDataTechnologies}>
                             <span>Tecnologías:</span> React, Express, MongoDB, Node.js
                         </p>
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.four}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFour}`}></a>
+                    <Link to="/project/1" className={`${style.galleryCardImage} ${style.imageFour}`}></Link>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Proyecto 4</p>
+                        <p className={style.galleryCardDataTitle}>Segunda Línea (Restaurante)</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
+                            <span>Tecnologías:</span> React, Node, Express, Google API
                         </p>
                     </div>
                 </div>

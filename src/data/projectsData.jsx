@@ -2,56 +2,37 @@ import react from "../assets/images/react.png";
 import node from "../assets/images/node.png";
 import express from "../assets/images/express.png";
 import google from "../assets/images/google.png";
-import segundaLinea from "../assets/images/proyect-segunda-linea.png";
-import benilaser from "../assets/images/proyect-benilaser.png";
-import barbershop from "../assets/images/proyect-barbershop.png";
+import segundaLinea from "../assets/images/project-segunda-linea.png";
+import benilaser from "../assets/images/project-benilaser.png";
+import barbershop from "../assets/images/project-barbershop.png";
+import abrilValentini from "../assets/images/project-abril-valentini.png";
 
 export const projectsData = [
     {
         id: 1,
-        title: "Segunda Línea",
-        deploy: "https://www.segundalineagastrobar.es",
+        title: "Abril Valentini (Portafolio Web)",
+        deploy: "https://www.abrilvalentini.com",
         description: (
             <p>
-                Segunda Línea es otro de mis proyectos como freelancer, tratándose de la página web de un restaurante ubicado precisamente en la segunda lína de la playa Poniente en Benidorm.
-                <br />
-                <br />
-                Este proyecto se integra de un frontend, en el que se muestran diferentes elementos relacionados con el restaurante, como un menú, un carrusel de fotos desarrollado por mí, un carrusel de reseñas desarrollado también por mí y utlizando las reseñas de Google, información de contacto junto con un pequeño formulario conectado a <a href="https://www.emailjs.com/">EmailJS</a>, entre otras cosas.
-                <br />
-                <br />
-                Además, como a todos los proyectos que involucran la API de{" "}
-                <a href="https://developers.google.com/maps/documentation/places/web-service/overview?hl=es-419" target="blank">
-                    Google Places
+                Este proyecto se trata del portafolio web personal de mi prima{" "}
+                <a href="https://www.linkedin.com/in/abril-valentini-1a8166292/" target="_blank">
+                    Abril Valentini
                 </a>
-                , tuve que desarrollar un pequeño servidor para hacer las peticiones a esta API, y que a su vez sirva esta información al cliente y así evitar problemas de CORS.
+                . Desarrollado con el objetivo de lucir su información personal, sus proyectos desarrollados a lo largo de su carrera, habilidades adquiridas y facilitar diversa información de cantacto a los visitantes.
+                <br />
+                <br />
             </p>
         ),
-        image: segundaLinea,
+        image: abrilValentini,
         technologies: [
             {
                 id: 1,
                 name: "React",
                 image: react,
             },
-            {
-                id: 2,
-                name: "Node",
-                image: node,
-            },
-            {
-                id: 3,
-                name: "Express",
-                image: express,
-            },
-            {
-                id: 4,
-                name: "Google API",
-                image: google,
-            },
         ],
         repositories: {
-            client: "https://github.com/Gaston-Valentini/segunda-linea-client",
-            server: "https://github.com/Gaston-Valentini/segunda-linea-server",
+            client: "https://github.com/Gaston-Valentini/portfolio-abril",
         },
     },
     {
@@ -162,6 +143,53 @@ export const projectsData = [
         repositories: {
             client: "https://github.com/Gaston-Valentini/barbershop-client",
             server: "https://github.com/Gaston-Valentini/barbershop-server",
+        },
+    },
+    {
+        id: 4,
+        title: "Segunda Línea",
+        deploy: "https://www.segundalineagastrobar.es",
+        description: (
+            <p>
+                Segunda Línea es otro de mis proyectos como freelancer, tratándose de la página web de un restaurante ubicado precisamente en la segunda lína de la playa Poniente en Benidorm.
+                <br />
+                <br />
+                Este proyecto se integra de un frontend, en el que se muestran diferentes elementos relacionados con el restaurante, como un menú, un carrusel de fotos desarrollado por mí, un carrusel de reseñas desarrollado también por mí y utlizando las reseñas de Google, información de contacto junto con un pequeño formulario conectado a <a href="https://www.emailjs.com/">EmailJS</a>, entre otras cosas.
+                <br />
+                <br />
+                Además, como a todos los proyectos que involucran la API de{" "}
+                <a href="https://developers.google.com/maps/documentation/places/web-service/overview?hl=es-419" target="blank">
+                    Google Places
+                </a>
+                , tuve que desarrollar un pequeño servidor para hacer las peticiones a esta API, y que a su vez sirva esta información al cliente y así evitar problemas de CORS.
+            </p>
+        ),
+        image: segundaLinea,
+        technologies: [
+            {
+                id: 1,
+                name: "React",
+                image: react,
+            },
+            {
+                id: 2,
+                name: "Node",
+                image: node,
+            },
+            {
+                id: 3,
+                name: "Express",
+                image: express,
+            },
+            {
+                id: 4,
+                name: "Google API",
+                image: google,
+            },
+        ],
+        repositories: {
+            client: "https://github.com/Gaston-Valentini/segunda-linea-client",
+            server: "https://github.com/Gaston-Valentini/segunda-linea-server",
         },
     },
 ];

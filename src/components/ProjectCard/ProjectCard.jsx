@@ -50,10 +50,14 @@ export default function ProjectCard() {
                             <FaLaptop className={style.deployServiceIcon} />
                             <p className={style.deployServiceText}>Repositorio del cliente</p>
                         </a>
-                        <a href={project.repositories.server} target="_blank" className={style.deployService}>
-                            <FaServer className={style.deployServiceIcon} />
-                            <p className={style.deployServiceText}>Repositorio del servidor</p>
-                        </a>
+                        {project.repositories.server ? (
+                            <a href={project.repositories.server} target="_blank" className={style.deployService}>
+                                <FaServer className={style.deployServiceIcon} />
+                                <p className={style.deployServiceText}>Repositorio del servidor</p>
+                            </a>
+                        ) : (
+                            <></>
+                        )}
                     </div>
                 </div>
             </section>

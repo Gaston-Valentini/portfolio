@@ -1,5 +1,5 @@
 import style from "./Header.module.css";
-import cv from "../../assets/files/CV.pdf";
+import cv from "../../assets/files/CV-Gastón-Valentini.pdf";
 
 export default function Header() {
     return (

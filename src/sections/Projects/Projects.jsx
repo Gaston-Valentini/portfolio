@@ -14,7 +14,7 @@ export default function Projects() {
                 </div>
             </div>
             <p className={style.text}>
-                A continuación se encuentran los enlaces a algunos de mis proyectos como freelancer, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Front-end como proyectos Full-stack. Acceda a mi{" "}
+                A continuación se encuentran los enlaces a algunos de mis proyectos como freelance, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Frontend como proyectos Full-Stack. Acceda a mi{" "}
                 <a href="https://github.com/Gaston-Valentini" target="_blank" className={style.textLink}>
                     GitHub
                 </a>{" "}

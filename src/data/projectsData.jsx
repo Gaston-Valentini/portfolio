@@ -18,7 +18,7 @@ export const projectsData = [
                 <a href="https://www.linkedin.com/in/abril-valentini-1a8166292/" target="_blank">
                     Abril Valentini
                 </a>
-                . Desarrollado con el objetivo de lucir su información personal, sus proyectos desarrollados a lo largo de su carrera, habilidades adquiridas y facilitar diversa información de cantacto a los visitantes.
+                . Desarrollado con el objetivo de lucir su información personal, sus proyectos desarrollados a lo largo de su carrera, habilidades adquiridas y facilitar diversa información de contacto a los visitantes.
                 <br />
                 <br />
             </p>
@@ -88,7 +88,7 @@ export const projectsData = [
         deploy: "https://barbershop-client-theta.vercel.app/",
         description: (
             <p>
-                Barbershop es un proyecto personal desarrollado con el fin de mostrar mis habilidades y conociminentos, tanto a reclutadores, desarrolladores y potenciales clientes.
+                Barbershop es un proyecto personal desarrollado con el fin de mostrar mis habilidades y conocimientos, tanto a reclutadores, desarrolladores y potenciales clientes.
                 <br />
                 <br />
                 Se trata de una landing page sobre una barbería ficticia, en la cual se pueden apreciar diferentes elementos de interés integrados como, la{" "}
@@ -99,7 +99,7 @@ export const projectsData = [
                 <a href="https://www.npmjs.com/package/react-slick" target="blank">
                     react-slick
                 </a>
-                , un mapa dinámico de Google Maps, contenido multimiedia generado con la inteligencia artificial de{" "}
+                , un mapa dinámico de Google Maps, contenido multimedia generado con la inteligencia artificial de{" "}
                 <a href="https://leonardo.ai/" target="blank">
                     Leoinardo.Ai
                 </a>
@@ -151,10 +151,10 @@ export const projectsData = [
         deploy: "https://www.segundalineagastrobar.es",
         description: (
             <p>
-                Segunda Línea es otro de mis proyectos como freelancer, tratándose de la página web de un restaurante ubicado precisamente en la segunda lína de la playa Poniente en Benidorm.
+                Segunda Línea es otro de mis proyectos como freelance, tratándose de la página web de un restaurante ubicado precisamente en la segunda línea de la playa Poniente en Benidorm.
                 <br />
                 <br />
-                Este proyecto se integra de un frontend, en el que se muestran diferentes elementos relacionados con el restaurante, como un menú, un carrusel de fotos desarrollado por mí, un carrusel de reseñas desarrollado también por mí y utlizando las reseñas de Google, información de contacto junto con un pequeño formulario conectado a <a href="https://www.emailjs.com/">EmailJS</a>, entre otras cosas.
+                Este proyecto se integra de un frontend, en el que se muestran diferentes elementos relacionados con el restaurante, como un menú, un carrusel de fotos desarrollado por mí, un carrusel de reseñas desarrollado también por mí y utilizando las reseñas de Google, información de contacto junto con un pequeño formulario conectado a <a href="https://www.emailjs.com/">EmailJS</a>, entre otras cosas.
                 <br />
                 <br />
                 Además, como a todos los proyectos que involucran la API de{" "}

@@ -135,7 +135,7 @@ export default function Technologies() {
                             <FaReact className={style.contentSkillsCardsCardIcon} />
                             <p className={style.contentSkillsCardsCardTitle}>Single Page Aplication</p>
                             <p className={style.contentSkillsCardsCardText}>
-                                Desarrollo de páginas web SPA gracias a la implmentación de <span>React</span> como freamwork de frontend
+                                Desarrollo de páginas web SPA gracias a la implementación de <span>React</span> como freamwork de frontend
                             </p>
                         </div>
                         <div className={style.contentSkillsCardsCard}>

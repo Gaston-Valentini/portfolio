@@ -23,7 +23,7 @@ export default function About() {
                         <a href="https://geekshubsacademy.com/producto/full-stack-developer/" target="_blank">
                             GeeksHubs Academy
                         </a>{" "}
-                        , graduámdome del mismo en diciembre del 2023.
+                        , graduándome del mismo en diciembre del 2023.
                         <br />
                         <br />
                         Disfruto mucho de otras actividades como hacer deporte, relacionarme con personas, leer y actividades de emprendimiento.

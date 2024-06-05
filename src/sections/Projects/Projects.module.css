@@ -103,7 +103,7 @@
 }
 
 .imageOne {
-    background-image: url("../../assets/images/project-abril-valentini.png");
+    background-image: url("../../assets/images/project-vespa-vintage-tours.png");
 }
 .imageTwo {
     background-image: url("../../assets/images/project-benilaser.png");
@@ -118,7 +118,7 @@
     background-image: url("https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg");
 }
 .imageSix {
-    background-image: url("../../assets/images/project-barbershop.png");
+    background-image: url("../../assets/images/project-abril-valentini.png");
 }
 
 .galleryCardData {
@@ -157,13 +157,13 @@
     color: black;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1027px) {
     .container {
         padding: 50px 20px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .container {
         padding: 50px 20px;
     }

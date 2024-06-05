@@ -14,7 +14,8 @@ export default function Projects() {
                 </div>
             </div>
             <p className={style.text}>
-                A continuación se encuentran los enlaces a algunos de mis proyectos como freelance, los cuales han sido desarrollados a lo largo de mi carrera como desarrollador web. Se observan tanto proyectos Frontend como proyectos Full-Stack. Acceda a mi{" "}
+                A continuación se encuentran los enlaces a algunos de mis proyectos como freelance, los cuales han sido desarrollados a lo largo de mi
+                carrera como desarrollador web. Se observan tanto proyectos Frontend como proyectos Full-Stack. Acceda a mi{" "}
                 <a href="https://github.com/Gaston-Valentini" target="_blank" className={style.textLink}>
                     GitHub
                 </a>{" "}
@@ -24,7 +25,7 @@ export default function Projects() {
                 <div className={`${style.galleryCard} ${style.one}`}>
                     <Link to="/project/1" className={`${style.galleryCardImage} ${style.imageOne}`}></Link>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Abril Valentini (Portfolio Web)</p>
+                        <p className={style.galleryCardDataTitle}>Vespa Vintage Tours (Excursiones) </p>
                         <p className={style.galleryCardDataTechnologies}>
                             <span>Tecnologías:</span> React, Node, Express, Google API
                         </p>
@@ -42,9 +43,9 @@ export default function Projects() {
                 <div className={`${style.galleryCard} ${style.three}`}>
                     <Link to="project/3" className={`${style.galleryCardImage} ${style.imageSix}`}></Link>
                     <div className={style.galleryCardData}>
-                        <p className={style.galleryCardDataTitle}>Barbershob (Barbería)</p>
+                        <p className={style.galleryCardDataTitle}>Abril Valentini (Portfolio Web)</p>
                         <p className={style.galleryCardDataTechnologies}>
-                            <span>Tecnologías:</span> React, Express, MongoDB, Node.js
+                            <span>Tecnologías:</span> React
                         </p>
                     </div>
                 </div>
@@ -58,7 +59,11 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.five}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageFive}`}></a>
+                    <a
+                        href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg"
+                        target="_blank"
+                        className={`${style.galleryCardImage} ${style.imageFive}`}
+                    ></a>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 5</p>
                         <p className={style.galleryCardDataTechnologies}>
@@ -67,7 +72,11 @@ export default function Projects() {
                     </div>
                 </div>
                 <div className={`${style.galleryCard} ${style.six}`}>
-                    <a href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg" target="_blank" className={`${style.galleryCardImage} ${style.imageThree}`}></a>
+                    <a
+                        href="https://empresa.org.ar/wp-content/uploads/2019/01/gestion-de-proyectos-1.jpeg"
+                        target="_blank"
+                        className={`${style.galleryCardImage} ${style.imageThree}`}
+                    ></a>
                     <div className={style.galleryCardData}>
                         <p className={style.galleryCardDataTitle}>Proyecto 6</p>
                         <p className={style.galleryCardDataTechnologies}>

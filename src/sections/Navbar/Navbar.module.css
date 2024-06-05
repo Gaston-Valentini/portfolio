@@ -53,7 +53,7 @@
     width: 100%;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1027px) {
     .bars {
         display: flex;
         align-items: center;

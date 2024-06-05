@@ -165,13 +165,13 @@
     background-color: var(--green);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1027px) {
     .container {
         padding: 50px 20px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .containerCard {
         flex-direction: column;
     }

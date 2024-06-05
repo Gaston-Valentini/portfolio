@@ -135,19 +135,19 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1027px) {
     .container {
         padding: 50px 20px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .contentSkillsCards {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     .contentTechnologies {
         flex-direction: column;
         gap: 10px;

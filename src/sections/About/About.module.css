@@ -84,7 +84,7 @@
     background-color: var(--green);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1027px) {
     .container {
         padding: 50px 20px;
     }
